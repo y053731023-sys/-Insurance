@@ -84,10 +84,10 @@ body, html {
 
 /* Base Card Styles */
 .card {
-    width: min(88vw, 65vh);
-    aspect-ratio: 1122 / 1402;
+    width: min(88vw, 68vh);
+    aspect-ratio: 1020 / 1315;
     position: relative;
-    border-radius: min(4vw, 16px);
+    border-radius: min(5vw, 22px);
     overflow: hidden;
     container-type: inline-size;
     transform-style: preserve-3d;
