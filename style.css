@@ -84,8 +84,8 @@ body, html {
 
 /* Base Card Styles */
 .card {
-    width: min(85vw, 60vh);
-    aspect-ratio: 2.5 / 3.5;
+    width: min(85vw, 65vh);
+    aspect-ratio: 1122 / 1402;
     position: relative;
     border-radius: min(4vw, 15px);
     container-type: inline-size;
@@ -244,20 +244,10 @@ body, html {
 }
 
 /* Themes */
-body.theme-poker .card-back {
-    background: radial-gradient(circle at 50% 50%, transparent 20%, #8a0a0a 21%, #8a0a0a 30%, transparent 31%),
-                repeating-linear-gradient(45deg, #700 0, #700 2px, #8a0a0a 2px, #8a0a0a 4px);
-    background-color: #8a0a0a;
-}
-
-body.theme-flags .card-back {
-    background: radial-gradient(circle at 50% 50%, transparent 20%, #0033a0 21%, #0033a0 30%, transparent 31%),
-                repeating-linear-gradient(45deg, #001f66 0, #001f66 2px, #0033a0 2px, #0033a0 4px);
-    background-color: #0033a0;
-}
-
-body.theme-landmarks .card-back {
-    background: radial-gradient(circle at 50% 50%, transparent 20%, #1a4a24 21%, #1a4a24 30%, transparent 31%),
-                repeating-linear-gradient(45deg, #0f3316 0, #0f3316 2px, #1a4a24 2px, #1a4a24 4px);
-    background-color: #1a4a24;
+body.theme-insurance .card-back,
+body.theme-landmarks .card-back,
+body.theme-default .card-back {
+    background: radial-gradient(circle at 50% 50%, transparent 20%, #1a365d 21%, #1a365d 30%, transparent 31%),
+                repeating-linear-gradient(45deg, #0f2042 0, #0f2042 2px, #1a365d 2px, #1a365d 4px);
+    background-color: #1a365d;
 }

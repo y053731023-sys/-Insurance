@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="theme-default">
+<body class="theme-insurance">
     <div id="app">
         <!-- 階段一：選牌 Carousel -->
         <div id="phase1" class="phase-container active">
             <div class="carousel" id="carousel">
-                <!-- JavaScript 會在這裡動態產生撲克牌 -->
+                <!-- JavaScript 會在這裡動態產生卡片 -->
             </div>
         </div>
 
@@ -29,23 +29,8 @@
             <div class="modal-content">
                 <h3>後台設定</h3>
                 <select id="theme-select">
-                    <option value="theme-poker">撲克牌</option>
-                    <option value="theme-flags">各國國旗</option>
-                    <option value="theme-landmarks">世界景點</option>
-                    <option value="theme-beauties">美女圖</option>
-                    <option value="theme-custom">自訂圖片</option>
+                    <option value="theme-insurance">保險</option>
                 </select>
-                <div id="custom-image-settings" style="display: none; margin-top: 15px;">
-                    <input type="file" id="custom-image-input" multiple accept="image/*"
-                        style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;">
-                    <label for="custom-image-input" id="btn-upload-custom"
-                        style="display: block; width: 100%; background: #007aff; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; text-align: center; font-size: 16px; font-weight: 600; box-sizing: border-box; user-select: none;">新增圖片</label>
-                    <div id="custom-image-count"
-                        style="margin-top: 10px; font-size: 14px; text-align: center; color: #ccc;">目前已上傳: 0 張</div>
-                    <div id="custom-image-list"
-                        style="margin-top: 10px; max-height: 150px; overflow-y: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding-right: 5px;">
-                    </div>
-                </div>
                 <div class="modal-actions" style="margin-top: 20px;">
                     <button id="btn-close-settings"
                         style="width: 100%; background: #444; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer;">關閉</button>
